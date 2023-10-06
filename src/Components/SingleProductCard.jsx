@@ -8,9 +8,9 @@ const SingleProductCard = ({ product, discount }) => {
                 {
                     discount && product.discount && <div className="badge m-1">{product.discount}% off</div>
                 }
-                <figure className='h-5/6'>
+                <figure className=''>
 
-                    <img src={product.image} alt="car!" />
+                    <img className='h-40' src={product.image} alt="car!" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">${product.price}</h2>
